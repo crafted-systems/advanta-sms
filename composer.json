@@ -1,0 +1,27 @@
+{
+    "name": "crafted-systems/advanta-sms",
+    "description": "Advanta SMS API",
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "5.*"
+    },
+    "author": {
+        "name": "Crafted Systems",
+        "email": "hello@crafted.co.ke"
+    },
+    "autoload": {
+        "psr-4": {
+            "CraftedSystems\\Advanta\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CraftedSystems\\Advanta\\AdvantaSMSServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
