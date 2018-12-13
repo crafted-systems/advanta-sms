@@ -72,7 +72,7 @@ class AdvantaSMS
         $user = $this->settings->user;
         $password = $this->settings->password;
 
-        $str = self::BASE_URL . "?user=$user&password=$password&sms=$message&mobiles=$recipient&sender=$sender";
+        $str = self::BASE_URL . "?user=$user&password=$password&mobiles=$recipient&sender=$sender&sms=$message";
 
         $response = Request::get($str);
 
